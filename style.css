@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #1F1C18, #8E0E00); 
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+}
+h1{
+    font-weight: normal;
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+form input, form button{
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+form button{
+    color: #8E0E00;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+form button:hover{
+    color:white;
+    background-color: #8E0E00;
+}
+.todo-list{
+    min-width: 30%
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.todo{
+    margin: 5px;
+    background: white;
+    font-size: 20px;
+    color: black;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li{
+    flex: 1;
+}
+.todo-items{
+    padding: 0px 10px;
+}
+.delete-btn,
+.check-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.check-btn{
+    background-color: #89c756;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.crossLine{
+    opacity: 0.5;
+    text-decoration: line-through
+}
+.fade{
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+#checked{
+    margin-left: 10px;
+    font-size: 48px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  .select {
+    margin: 10px;
+    position: relative;
+  }
+  select {
+    color: black;
+    font-family: 'Maven Pro', sans-serif;
+    cursor: pointer;
+    padding: 17px;
+    width: 160px;
+  }
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background: #8E0E00;
+    cursor: pointer;
+    pointer-events: none;
+    color: white;
+  }
